@@ -1,13 +1,13 @@
-const pool = require('../config/database');
+const Medication = require('../models/Medication');
 
-// Controlador para obtener medicamentos
 const getMedications = async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM medications');
-        res.json(result.rows);
+        const medications = await Medication.find();
+        res.json(medications);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 };
 
 module.exports = { getMedications };
+
