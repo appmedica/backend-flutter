@@ -1,4 +1,4 @@
-const Medication = require('../models/Medication');
+const Medication = require('../models/medication');
 
 const getMedications = async (req, res) => {
     try {

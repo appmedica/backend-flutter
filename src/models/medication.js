@@ -7,4 +7,4 @@ const medicationSchema = new mongoose.Schema({
     price: { type: Number }
 }, { timestamps: true });
 
-module.exports = mongoose.model('Medication', medicationSchema);
+module.exports = mongoose.model('medication', medicationSchema);

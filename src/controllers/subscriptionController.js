@@ -1,4 +1,4 @@
-const Subscription = require('../models/Subscription');
+const Subscription = require('../models/subscription');
 
 const subscribe = async (req, res) => {
     const { userId, subscriptionType, paymentStatus } = req.body;
